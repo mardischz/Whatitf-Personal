@@ -1,15 +1,12 @@
 export default function Header() {
   return (
     <header className="w-full px-4 sm:px-6 lg:px-[106px] py-4 lg:py-[33px]">
-      <nav className="w-full max-w-[1440px] mx-auto flex items-center justify-between gap-4 min-w-0">
+      <nav className="w-full max-w-[1512px] mx-auto flex items-center justify-between gap-4 min-w-0">
         {/* Left: Logo + Navigation */}
         <div className="flex items-center gap-4 lg:gap-8 min-w-0 flex-1">
           {/* Logo */}
-          <div className="flex items-center gap-0 flex-shrink-0">
-            <svg width="23" height="26" viewBox="0 0 23 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.5 0L23 6.5V19.5L11.5 26L0 19.5V6.5L11.5 0Z" fill="#8A0000"/>
-            </svg>
-            <span className="font-display text-xl font-medium text-venera-red ml-[15px]">enera</span>
+          <div className="flex items-center flex-shrink-0">
+            <span className="font-display text-xl lg:text-2xl font-medium text-venera-red">Venera</span>
           </div>
 
           {/* Divider (hide on small) */}
