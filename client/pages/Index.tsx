@@ -44,7 +44,8 @@ export default function Index() {
             Simula tus escenarios financieros.
           </h2>
           <p className="font-sans text-lg md:text-[25px] font-normal text-venera-red leading-tight">
-            Ajusta tus ingresos, gastos o inversiones y observa cómo cambia tu proyección en tiempo real.
+            Ajusta tus ingresos, gastos o inversiones y observa cómo cambia tu
+            proyección en tiempo real.
           </p>
         </div>
 
@@ -97,7 +98,10 @@ export default function Index() {
             {/* Column 1 */}
             <div className="space-y-4 md:space-y-[13px]">
               {gastosCategories.map((category) => (
-                <div key={category.name} className="flex items-center gap-3 md:gap-[19px]">
+                <div
+                  key={category.name}
+                  className="flex items-center gap-3 md:gap-[19px]"
+                >
                   <div className="w-3.5 h-3.5 bg-white flex-shrink-0"></div>
                   <span className="font-sans text-lg md:text-xl text-white">
                     {category.name}
@@ -109,7 +113,10 @@ export default function Index() {
             {/* Column 2 */}
             <div className="space-y-4 md:space-y-[13px]">
               {gastosCategories2.map((category) => (
-                <div key={category.name} className="flex items-center gap-3 md:gap-[19px]">
+                <div
+                  key={category.name}
+                  className="flex items-center gap-3 md:gap-[19px]"
+                >
                   <div className="w-3.5 h-3.5 bg-white flex-shrink-0"></div>
                   <span className="font-sans text-lg md:text-xl text-white">
                     {category.name}
@@ -121,7 +128,10 @@ export default function Index() {
             {/* Column 3 */}
             <div className="space-y-4 md:space-y-[13px]">
               {gastosCategories3.map((category) => (
-                <div key={category.name} className="flex items-center gap-3 md:gap-[19px]">
+                <div
+                  key={category.name}
+                  className="flex items-center gap-3 md:gap-[19px]"
+                >
                   <div className="w-3.5 h-3.5 bg-white flex-shrink-0"></div>
                   <span className="font-sans text-lg md:text-xl text-white">
                     {category.name}
@@ -148,11 +158,11 @@ export default function Index() {
         <div className="text-center mb-12 md:mb-16 relative">
           {/* Blur effect */}
           <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[295px] h-[102px] bg-venera-red/40 blur-[150px] -z-10"></div>
-          
+
           <button className="bg-venera-button hover:bg-venera-dark-red transition-colors text-white font-display text-base md:text-lg font-bold uppercase tracking-[1.6px] px-10 py-5 md:py-[27px] md:px-10 rounded-full mb-8 md:mb-12">
             Consulta con la AI
           </button>
-          
+
           <p className="font-sans text-2xl md:text-[35px] font-normal text-venera-red text-center leading-tight max-w-[420px] mx-auto">
             De la intención a la acción,
             <br />

@@ -6,7 +6,9 @@ export default function Header() {
         <div className="flex items-center gap-4 lg:gap-8 min-w-0 flex-1">
           {/* Logo */}
           <div className="flex items-center flex-shrink-0">
-            <span className="font-display text-xl lg:text-2xl font-medium text-venera-red">Venera</span>
+            <span className="font-display text-xl lg:text-2xl font-medium text-venera-red">
+              Venera
+            </span>
           </div>
 
           {/* Divider (hide on small) */}
@@ -14,16 +16,28 @@ export default function Header() {
 
           {/* Navigation Links - single row, scrollable on small screens */}
           <div className="flex items-center gap-4 sm:gap-6 lg:gap-7 overflow-x-auto whitespace-nowrap no-scrollbar min-w-0">
-            <a href="/" className="font-display text-sm font-medium text-venera-red uppercase tracking-[1.4px] underline decoration-venera-red hover:opacity-80 transition-opacity">
+            <a
+              href="/"
+              className="font-display text-sm font-medium text-venera-red uppercase tracking-[1.4px] underline decoration-venera-red hover:opacity-80 transition-opacity"
+            >
               INICIO
             </a>
-            <a href="#" className="font-display text-sm font-medium text-venera-red uppercase tracking-[1.4px] hover:opacity-80 transition-opacity">
+            <a
+              href="#"
+              className="font-display text-sm font-medium text-venera-red uppercase tracking-[1.4px] hover:opacity-80 transition-opacity"
+            >
               TABLERO INTELIGENTE
             </a>
-            <a href="#" className="font-display text-sm font-medium text-venera-red uppercase tracking-[1.4px] hover:opacity-80 transition-opacity">
+            <a
+              href="#"
+              className="font-display text-sm font-medium text-venera-red uppercase tracking-[1.4px] hover:opacity-80 transition-opacity"
+            >
               SIMULADOR
             </a>
-            <a href="#" className="font-display text-sm font-medium text-venera-red uppercase tracking-[1.4px] hover:opacity-80 transition-opacity">
+            <a
+              href="#"
+              className="font-display text-sm font-medium text-venera-red uppercase tracking-[1.4px] hover:opacity-80 transition-opacity"
+            >
               INICIAR SESIÓN
             </a>
           </div>
