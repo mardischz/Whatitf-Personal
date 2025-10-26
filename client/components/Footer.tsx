@@ -52,12 +52,9 @@ export default function Footer() {
           All rights reserved
         </p>
 
-        {/* Logo at bottom */}
+        {/* Brand at bottom */}
         <div className="flex items-center gap-0 mt-12 md:absolute md:left-[158px] md:bottom-[64px]">
-          <svg width="23" height="26" viewBox="0 0 23 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11.5 0L23 6.5V19.5L11.5 26L0 19.5V6.5L11.5 0Z" fill="white"/>
-          </svg>
-          <span className="font-display text-xl font-medium text-white ml-[15px]">enera</span>
+          <span className="font-display text-xl font-medium text-white">Venera</span>
         </div>
       </div>
     </footer>
