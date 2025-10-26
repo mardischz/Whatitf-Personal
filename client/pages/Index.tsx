@@ -22,12 +22,11 @@ export default function Index() {
     { name: "Transacciones", checked: true },
   ]);
 
-  const toggleItem = (
-    col: 1 | 2 | 3,
-    name: string
-  ) => {
+  const toggleItem = (col: 1 | 2 | 3, name: string) => {
     const updater = (arr: { name: string; checked: boolean }[]) =>
-      arr.map((it) => (it.name === name ? { ...it, checked: !it.checked } : it));
+      arr.map((it) =>
+        it.name === name ? { ...it, checked: !it.checked } : it,
+      );
     if (col === 1) setGastosCategories((arr) => updater(arr));
     if (col === 2) setGastosCategories2((arr) => updater(arr));
     if (col === 3) setGastosCategories3((arr) => updater(arr));
@@ -120,12 +119,26 @@ export default function Index() {
                     role="checkbox"
                   >
                     {category.checked && (
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 3L4.5 8.5L2 6" stroke="#8A0000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 3L4.5 8.5L2 6"
+                          stroke="#8A0000"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
                       </svg>
                     )}
                   </span>
-                  <span className="font-sans text-lg md:text-xl text-white">{category.name}</span>
+                  <span className="font-sans text-lg md:text-xl text-white">
+                    {category.name}
+                  </span>
                 </label>
               ))}
             </div>
@@ -144,12 +157,26 @@ export default function Index() {
                     role="checkbox"
                   >
                     {category.checked && (
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 3L4.5 8.5L2 6" stroke="#8A0000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 3L4.5 8.5L2 6"
+                          stroke="#8A0000"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
                       </svg>
                     )}
                   </span>
-                  <span className="font-sans text-lg md:text-xl text-white">{category.name}</span>
+                  <span className="font-sans text-lg md:text-xl text-white">
+                    {category.name}
+                  </span>
                 </label>
               ))}
             </div>
@@ -168,12 +195,26 @@ export default function Index() {
                     role="checkbox"
                   >
                     {category.checked && (
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 3L4.5 8.5L2 6" stroke="#8A0000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 3L4.5 8.5L2 6"
+                          stroke="#8A0000"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
                       </svg>
                     )}
                   </span>
-                  <span className="font-sans text-lg md:text-xl text-white">{category.name}</span>
+                  <span className="font-sans text-lg md:text-xl text-white">
+                    {category.name}
+                  </span>
                 </label>
               ))}
             </div>
