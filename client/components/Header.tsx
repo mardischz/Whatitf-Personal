@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <header className="w-full px-4 sm:px-6 lg:px-[106px] py-4 lg:py-[33px]">
-      <nav className="w-full max-w-[1320px] mx-auto flex items-center justify-between gap-4 min-w-0">
+      <nav className="w-full max-w-[1440px] mx-auto flex items-center justify-between gap-4 min-w-0">
         {/* Left: Logo + Navigation */}
         <div className="flex items-center gap-4 lg:gap-8 min-w-0 flex-1">
           {/* Logo */}
