@@ -66,7 +66,7 @@ export default function Index() {
           </div>
 
           {/* Egresos Card */}
-          <div className="rounded-[12.75px] bg-gradient-to-br from-venera-gradient-start to-venera-gradient-end shadow-lg p-5 md:p-[21px]">
+          <div className="rounded-[12.75px] bg-gradient-to-br from-venera-gradient-start to-venera-gradient-end shadow-lg p-5 md:p-[21px] md:w-[374px] md:h-[161px]">
             <h3 className="font-sans text-xl md:text-[26px] font-bold text-[#F3E8FF] mb-8 md:mb-11">
               Egresos
             </h3>
