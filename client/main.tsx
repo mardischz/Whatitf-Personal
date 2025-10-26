@@ -14,5 +14,5 @@ container._reactRoot = root;
 root.render(
   <StrictMode>
     <App />
-  </StrictMode>
+  </StrictMode>,
 );
