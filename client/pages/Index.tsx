@@ -149,7 +149,7 @@ export default function Index() {
           {/* Blur effect */}
           <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[295px] h-[102px] bg-venera-red/40 blur-[150px] -z-10"></div>
           
-          <button className="bg-venera-button hover:bg-venera-dark-red transition-colors text-white font-display text-sm md:text-base font-bold uppercase tracking-[1.6px] px-8 py-4 md:py-[27px] md:px-8 rounded-full mb-8 md:mb-12">
+          <button className="bg-venera-button hover:bg-venera-dark-red transition-colors text-white font-display text-base md:text-lg font-bold uppercase tracking-[1.6px] px-10 py-5 md:py-[27px] md:px-10 rounded-full mb-8 md:mb-12">
             Consulta con la AI
           </button>
           
