@@ -104,4 +104,8 @@
     overflow-x: auto;
     white-space: pre;
   }
+
+  /* Utility: hide scrollbar for overflow containers */
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 }
