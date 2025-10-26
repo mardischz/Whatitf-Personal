@@ -109,45 +109,72 @@ export default function Index() {
             {/* Column 1 */}
             <div className="space-y-4 md:space-y-[13px]">
               {gastosCategories.map((category) => (
-                <div
+                <label
                   key={category.name}
-                  className="flex items-center gap-3 md:gap-[19px]"
+                  className="flex items-center gap-3 md:gap-[19px] cursor-pointer select-none"
+                  onClick={() => toggleItem(1, category.name)}
                 >
-                  <div className="w-3.5 h-3.5 bg-white flex-shrink-0"></div>
-                  <span className="font-sans text-lg md:text-xl text-white">
-                    {category.name}
+                  <span
+                    className={`flex items-center justify-center w-4 h-4 rounded-sm border border-white ${category.checked ? "bg-white" : "bg-transparent"}`}
+                    aria-checked={category.checked}
+                    role="checkbox"
+                  >
+                    {category.checked && (
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 3L4.5 8.5L2 6" stroke="#8A0000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    )}
                   </span>
-                </div>
+                  <span className="font-sans text-lg md:text-xl text-white">{category.name}</span>
+                </label>
               ))}
             </div>
 
             {/* Column 2 */}
             <div className="space-y-4 md:space-y-[13px]">
               {gastosCategories2.map((category) => (
-                <div
+                <label
                   key={category.name}
-                  className="flex items-center gap-3 md:gap-[19px]"
+                  className="flex items-center gap-3 md:gap-[19px] cursor-pointer select-none"
+                  onClick={() => toggleItem(2, category.name)}
                 >
-                  <div className="w-3.5 h-3.5 bg-white flex-shrink-0"></div>
-                  <span className="font-sans text-lg md:text-xl text-white">
-                    {category.name}
+                  <span
+                    className={`flex items-center justify-center w-4 h-4 rounded-sm border border-white ${category.checked ? "bg-white" : "bg-transparent"}`}
+                    aria-checked={category.checked}
+                    role="checkbox"
+                  >
+                    {category.checked && (
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 3L4.5 8.5L2 6" stroke="#8A0000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    )}
                   </span>
-                </div>
+                  <span className="font-sans text-lg md:text-xl text-white">{category.name}</span>
+                </label>
               ))}
             </div>
 
             {/* Column 3 */}
             <div className="space-y-4 md:space-y-[13px]">
               {gastosCategories3.map((category) => (
-                <div
+                <label
                   key={category.name}
-                  className="flex items-center gap-3 md:gap-[19px]"
+                  className="flex items-center gap-3 md:gap-[19px] cursor-pointer select-none"
+                  onClick={() => toggleItem(3, category.name)}
                 >
-                  <div className="w-3.5 h-3.5 bg-white flex-shrink-0"></div>
-                  <span className="font-sans text-lg md:text-xl text-white">
-                    {category.name}
+                  <span
+                    className={`flex items-center justify-center w-4 h-4 rounded-sm border border-white ${category.checked ? "bg-white" : "bg-transparent"}`}
+                    aria-checked={category.checked}
+                    role="checkbox"
+                  >
+                    {category.checked && (
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 3L4.5 8.5L2 6" stroke="#8A0000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    )}
                   </span>
-                </div>
+                  <span className="font-sans text-lg md:text-xl text-white">{category.name}</span>
+                </label>
               ))}
             </div>
           </div>
