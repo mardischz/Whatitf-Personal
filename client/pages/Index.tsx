@@ -4,23 +4,34 @@ export default function Index() {
   const [ingresos, setIngresos] = useState("40,000");
   const [egresos, setEgresos] = useState("40,000");
 
-  const gastosCategories = [
+  const [gastosCategories, setGastosCategories] = useState([
     { name: "Salud", checked: true },
     { name: "Restaurantes", checked: true },
     { name: "Comidas", checked: true },
-  ];
+  ]);
 
-  const gastosCategories2 = [
+  const [gastosCategories2, setGastosCategories2] = useState([
     { name: "Supermercado", checked: true },
     { name: "Entretenimiento", checked: true },
     { name: "Servicios", checked: true },
-  ];
+  ]);
 
-  const gastosCategories3 = [
+  const [gastosCategories3, setGastosCategories3] = useState([
     { name: "Educación", checked: true },
     { name: "Transporte", checked: true },
     { name: "Transacciones", checked: true },
-  ];
+  ]);
+
+  const toggleItem = (
+    col: 1 | 2 | 3,
+    name: string
+  ) => {
+    const updater = (arr: { name: string; checked: boolean }[]) =>
+      arr.map((it) => (it.name === name ? { ...it, checked: !it.checked } : it));
+    if (col === 1) setGastosCategories((arr) => updater(arr));
+    if (col === 2) setGastosCategories2((arr) => updater(arr));
+    if (col === 3) setGastosCategories3((arr) => updater(arr));
+  };
 
   return (
     <div className="min-h-screen bg-white">
