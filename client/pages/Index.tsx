@@ -49,7 +49,7 @@ export default function Index() {
         </div>
 
         {/* Cards Row */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 md:mb-12">
+        <div className="grid grid-cols-1 gap-6 mb-8 md:mb-12 md:grid md:[grid-template-columns:repeat(3,374px)] md:justify-between">
           {/* Ingresos Card */}
           <div className="rounded-[12.75px] bg-gradient-to-br from-venera-gradient-start to-venera-gradient-end shadow-lg p-5 md:p-[21px]">
             <h3 className="font-sans text-xl md:text-[26px] font-bold text-[#F3E8FF] mb-8 md:mb-11">
