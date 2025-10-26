@@ -26,7 +26,7 @@ export default function Index() {
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <div className="w-full bg-venera-red px-4 sm:px-6 md:px-[137px] py-8 md:py-[73px]">
-        <div className="max-w-[1440px] mx-auto">
+        <div className="max-w-[1512px] mx-auto">
           <h1 className="font-display text-3xl md:text-[42px] font-bold text-white leading-tight md:leading-[55px] mb-3">
             Bienvenida de Regreso, Mariana
           </h1>
